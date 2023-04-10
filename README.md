@@ -1,6 +1,6 @@
 <div align="center">   
   
-# Planning-oriented Autonomous Driving
+# Retrofitted-UniAD Autonomous Driving
 </div>
 
 <!-- <p align="center">
