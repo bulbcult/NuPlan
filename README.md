@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/48089846/202974395-15fe83ac-eebb-4f38-
 
 <br><br>
 
-![teaser](sources/pipeline.png)
+![teaser](sources/train_map.png)
 
 ## Table of Contents:
 1. [Highlights](#high)
