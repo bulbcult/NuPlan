@@ -16,9 +16,9 @@
 </p> -->
 
 <h3 align="center">
-  <a href="https://opendrivelab.github.io/UniAD/">Project Page</a> |
-  <a href="https://arxiv.org/abs/2212.10156">arXiv</a> |
-  <a href="https://opendrivelab.com/">OpenDriveLab</a>
+  <a href="https://TBD/">Project Page</a> |
+  <a href="https://TBD">arXiv</a> |
+  <a href="https://TBD/">OpenDriveLab</a>
   
 </h3>
 
