@@ -16,9 +16,9 @@
 </p> -->
 
 <h3 align="center">
-  <a href="https://TBD/">Project Page</a> |
+  <a href="https://TBD/">Inceptio Technology</a> |
   <a href="https://TBD">arXiv</a> |
-  <a href="https://TBD/">OpenDriveLab</a>
+  <a href="https://TBD/">XLab</a>
   
 </h3>
 
