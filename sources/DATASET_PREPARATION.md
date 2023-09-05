@@ -23,30 +23,53 @@ ScenarioDescription
 │   ├── ...
 ├── ...
 
-
-
 ```
 **Step 2:** Install the [Waymo Open Dataset API](https://github.com/waymo-research/waymo-open-dataset/blob/master/docs/quick_start.md) as follows: 
 ```
 pip install waymo-open-dataset-tf-2-6-0
 ```
+# MTR Data input format
+Dataset
+├── Sample_1
+│   ├── track_infos
+│   │   ├── object_id (64*1)
+│   │   ├── object_types (64*1)
+│   │   ├── trajs (64, 91, 10)
+│   ├── dynamic_map_infos
+│   │   ├── lane_id (len 91)
+│   │   ├── state (len 91)
+│   │   ├── stop_point (len 91)
+│   ├── map_infos
+│   │   ├── lane (len 212)
+│   │   │   ├── 'id': 139
+│   │   │   ├── 'speed_limit_mph': 10.0
+│   │   │   ├── 'type': 'TYPE_SURFACE_STREET'
+│   │   │   ├── 'interpolating': False
+│   │   │   ├── 'entry_lanes': []
+│   │   │   ├── 'exit_lanes': []
+│   │   │   ├── 'left_boundary' (len 3)
+│   │   │   │   ├── 'start_index': 0, 
+│   │   │   │   ├── 'end_index': 5, 
+│   │   │   │   ├── 'feature_id': 5, 
+│   │   │   │   ├── 'boundary_type': 0
+│   │   │   ├── 'right_boundary' (len 2)
+│   │   │   │   ├── 'start_index': 1
+│   │   │   │   ├── 'end_index': 13
+│   │   │   │   ├── 'feature_id': 5
+│   │   │   │   ├── 'boundary_type': 'TYPE_UNKNOWN'
+│   │   │   ├── 'polyline_index': (12222, 12270)
+│   │   ├── road_line (len 91)
+│   │   ├── road_edge (len 91)
+│   │   ├── stop_sign (len 91)
+│   │   ├── crosswalk (len 91)
+│   │   ├── speed_bump (len 91)
+│   │   ├── all_polylines (len 91)
+│   ├── scenario_id
+│   ├── timestamps_seconds (1 + 90 timestamps)
+│   │   ├── current_time_index
+│   │   ├── sdc_track_index
+│   ├── dynamic_map_infos
+├── Sample_2
+├── ...
+''
 
-**Step 3:** Preprocess the dataset:
-```
-cd mtr/datasets/waymo
-python data_preprocess.py ../../../data/waymo/scenario/  ../../../data/waymo
-```
-These two paths indicate the raw data path and the output data path. 
-
-Then, the processed data will be saved to `data/waymo/` directory as follows:
-```
-MTR
-├── data
-│   ├── waymo
-│   │   ├── processed_scenarios_training
-│   │   ├── processed_scenarios_validation
-│   │   ├── processed_scenarios_training_infos.pkl
-│   │   ├── processed_scenarios_val_infos.pkl
-├── mtr
-├── tools
-```
