@@ -33,9 +33,9 @@ pip install waymo-open-dataset-tf-2-6-0
 Dataset
 ├── Sample_1
 │   ├── track_infos
-│   │   ├── object_id (64*1)
-│   │   ├── object_types (64*1)
-│   │   ├── trajs (64, 91, 10)
+│   │   ├── object_id (agent_nr*1)
+│   │   ├── object_types (agent_nr*1)
+│   │   ├── trajs (agent_nr, 91, 10) # agent_nr can be 64 or 19
 │   ├── dynamic_map_infos
 │   │   ├── lane_id (len 91)
 │   │   ├── state (len 91)
