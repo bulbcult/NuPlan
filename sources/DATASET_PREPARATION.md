@@ -28,6 +28,7 @@ ScenarioDescription
 ```
 pip install waymo-open-dataset-tf-2-6-0
 ```
+```
 # MTR Data input format
 Dataset
 ├── Sample_1
@@ -71,5 +72,5 @@ Dataset
 │   ├── dynamic_map_infos
 ├── Sample_2
 ├── ...
-''
+```
 
